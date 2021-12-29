@@ -14,17 +14,17 @@ Little Endian:
 El byte de menos peso (Least Significant Byte) es almacenado en la dirección de
 memoria más baja de memoria.
 
-struct sockaddr_in
+    struct sockaddr_in
     {
         short            sin_family;    // Ejemplo: AF_INET (IPv4)
         unsigned short   sin_port;      // Puerto, ejemplo: 3490
         struct in_addr   sin_addr;      // struct incrustada in_addr
                                  .s_addr;
-        char             sin_zero[8];   // zero this if you want to
+        char             sin_zero[8];
     };
 
 // Dirección Internet IPv4
-struct in_addr
+    struct in_addr
     {
         unsigned long s_addr;           // struct - Dirección tratada con inet_aton()
     };
