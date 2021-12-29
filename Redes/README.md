@@ -24,6 +24,7 @@ memoria más baja de memoria.
     };
 
 // Dirección Internet IPv4
+
     struct in_addr
     {
         unsigned long s_addr;           // struct - Dirección tratada con inet_aton()
