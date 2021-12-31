@@ -49,9 +49,10 @@ int main(int argc, char *argv[])
 
     if (errorHilo != 0)
     {
-        printf("Error creando el hilo \n");
+        printf("Error creando el hilo, codigo %i \n", errorHilo);
         return -1;
     }
+
 
     return 0;
 }

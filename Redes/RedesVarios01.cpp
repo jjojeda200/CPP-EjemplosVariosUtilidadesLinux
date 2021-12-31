@@ -10,7 +10,7 @@ Little Endian:
 El byte de menos peso (Least Significant Byte) es almacenado en la dirección de
 memoria más baja de memoria.
 
-Link with "-lresolv" Compilar:
+Link con "-lresolv" Compilar:
 gcc RedesVarios01.cpp -lresolv -o RedesVarios01
 */
 

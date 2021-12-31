@@ -17,3 +17,11 @@ Linux.Pipe01.cpp: Practica pendiente finalizar "----"
 28-12-2021
 
 inotify: monitorizar eventos en directorios y archivos
+
+30-12-2021
+
+Linux-Hilos-pthread00.cpp: Practica hilos, crear y ejecutar una terminal, mostrar ID
+
+31-12-2021
+
+Linux-Hilos-pthread01.cpp: Practica crear, escribir en un fichero y esperar finalización
