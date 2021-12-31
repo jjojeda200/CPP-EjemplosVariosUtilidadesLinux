@@ -25,3 +25,8 @@ Linux-Hilos-pthread00.cpp: Practica hilos, crear y ejecutar una terminal, mostra
 31-12-2021
 
 Linux-Hilos-pthread01.cpp: Practica crear, escribir en un fichero y esperar finalización
+
+
+31-12-2021
+
+Linux-Hilos-pthread02.cpp: Practica multiples hilos

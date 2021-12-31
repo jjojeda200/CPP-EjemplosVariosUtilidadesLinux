@@ -8,7 +8,7 @@
     https://man7.org/linux/man-pages/man7/pthreads.7.html
 
     Link con "-pthread" Compilar:
-    gcc Linux-Hilos-pthread00.cpp -pthread -o Linux-Hilos-pthread
+    gcc Linux-Hilos-pthread01.cpp -pthread -o Linux-Hilos-pthread
 */
 #include <pthread.h>
 #include <fstream>
