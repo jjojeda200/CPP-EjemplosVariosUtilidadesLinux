@@ -29,4 +29,4 @@ Linux-Hilos-pthread01.cpp: Practica crear, escribir en un fichero y esperar fina
 
 31-12-2021
 
-Linux-Hilos-pthread02.cpp: Practica multiples hilos
+Linux-Hilos-pthread02.cpp: Practica múltiples hilos

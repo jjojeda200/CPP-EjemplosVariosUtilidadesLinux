@@ -1,9 +1,6 @@
 /*
     José Juan Ojeda Granados, 31-12-2021
-    pthreads: manejo de hilos, crear uno, escribir en un fichero y esperar finalización
-
-    La función pthread_create () inicia un nuevo hilo en la llamada proceso. El nuevo hilo comienza la ejecución invocando start_routine(); arg se pasa como el único argumento de
-        start_routine ().
+    pthreads: manejo de múltiples hilos
 
     https://man7.org/linux/man-pages/man7/pthreads.7.html
 
@@ -17,14 +14,12 @@
 #include <unistd.h>
 #include <errno.h>
 
-
-
-
 void *funcionThread(void *argValor)
 {
+    // long numeroHilo = *((long*)argValor);
+    // printf("Número de hilo: \e[0;33m %ld \e[0m\n", numeroHilo);
     int numeroHilo = *((int*)argValor);
-
-    printf("ID de hilo\e[0;33m %d: %u\e[0m\n", numeroHilo, (unsigned int)pthread_self());
+    printf("\e[0;33m Número de hilo ejecutado:\e[0;37m %d \e[0m\n", numeroHilo);
     pthread_exit(0);
 
     return 0;
@@ -54,23 +49,24 @@ int main(int argc, char *argv[])
         void *restrict arg);
     */
 
-    for (int i = 0; i < argValor; i++)
+    for (long i = 0; i < argValor; i++)
     {
         hiloNumero = i;
+        printf("\e[0;34mEn Hilo Principal: creando thread\e[0;37m %ld\e[0m\n", i);
         errorHilo = pthread_create(
             &hilos[i],      // Puntero al identificador
             NULL,           // Atributos del hilo, NULL = los por defecto
             &funcionThread, // Rutina a ejecutar al crear el hilo
             &hiloNumero);   // Argumento (único) que se pasa a la rutina
-        printf("%lu ", hilos[i]);
         if (errorHilo != 0)
         {
             printf("Error creando el hilo, código %i \n", errorHilo);
             return -1;
         }
-        sleep(2);
+        //sleep(2);
+        
         // int pthread_join(pthread_t thread, void **retval);
-        pthread_join(hilos[i], NULL);
+        // pthread_join(hilos[i], NULL);
     }
 
     return 0;
