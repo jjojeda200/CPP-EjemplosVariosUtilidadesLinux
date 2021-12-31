@@ -19,7 +19,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-// int pthread_join(pthread_t thread, void **retval);
 
 void *funcionThread(void *argValor)
 {
@@ -48,7 +47,6 @@ int main(int argc, char *argv[])
 {
     system("clear");
     
-
     if (argc != 2)
     {
         printf("%s \e[0;33mUso: Indica el número de lineas a añadir al archivo\e[0m\n", argv[0]);
@@ -77,6 +75,8 @@ int main(int argc, char *argv[])
         printf("Error creando el hilo, código %i \n", errorHilo);
         return -1;
     }
+
+    // int pthread_join(pthread_t thread, void **retval);
     pthread_join(hiloUno, NULL);
 
     return 0;
