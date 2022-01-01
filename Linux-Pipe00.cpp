@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    // wait para cada hijo
+    // wait para cada hijo, wait() se bloquea hasta que todos los hijos hayan terminado
     wait(&status);
     wait(&status);
 

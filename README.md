@@ -4,7 +4,7 @@
 
 22-12-2021
 
-Linux-Fork.cpp: Fork y un proceso hijo
+Linux-Fork00.cpp: Fork y un proceso hijo
 
 23-12-2021  # Original de Amaia - WhileTrueThenDream
 
@@ -26,7 +26,10 @@ Linux-Hilos-pthread00.cpp: Practica básica hilo, crear y ejecutar una terminal,
 
 Linux-Hilos-pthread01.cpp: Practica crear hilo, espera completar tarea y recibir resultado devuelto, escribir en un fichero, esperar finalización
 
-
 31-12-2021
 
 Linux-Hilos-pthread02.cpp: Practica múltiples hilos, con ID
+
+01-01-2022
+
+Linux-Fork00.cpp: Fork y múltiples procesos hijos, hijos de hijos y zombis (defunct)
