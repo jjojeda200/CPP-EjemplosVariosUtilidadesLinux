@@ -4,7 +4,7 @@
 
 22-12-2021
 
-Linux-Fork00.cpp: Fork y un proceso hijo
+Linux-Fork00.cpp: Ejercicio Fork y un proceso hijo
 
 23-12-2021  # Original de Amaia - WhileTrueThenDream
 
@@ -12,24 +12,28 @@ Linux.Pipe00.cpp: Practica Programar "ls -l | wc > salida.txt"
 
 24-12-2021
 
-Linux.Pipe01.cpp: Practica pendiente finalizar "----"
+Linux.Pipe01.cpp: Ejercicio pendiente finalizar "----"
 
 28-12-2021
 
-inotify: monitorizar eventos en directorios y archivos
+Linux-Monitor-inotify.cpp: Ejercicio monitorizar eventos en directorios y archivos
 
 30-12-2021
 
-Linux-Hilos-pthread00.cpp: Practica básica hilo, crear y ejecutar una terminal, mostrar ID
+Linux-Hilos-pthread00.cpp: Ejercicio básica hilo, crear y ejecutar una terminal, mostrar ID
 
 31-12-2021
 
-Linux-Hilos-pthread01.cpp: Practica crear hilo, espera completar tarea y recibir resultado devuelto, escribir en un fichero, esperar finalización
+Linux-Hilos-pthread01.cpp: Ejercicio crear hilo, espera completar tarea y recibir resultado devuelto, escribir en un fichero, esperar finalización
 
 31-12-2021
 
-Linux-Hilos-pthread02.cpp: Practica múltiples hilos, con ID
+Linux-Hilos-pthread02.cpp: Ejercicio múltiples hilos, con ID
 
 01-01-2022
 
-Linux-Fork00.cpp: Fork y múltiples procesos hijos, hijos de hijos y zombis (defunct)
+Linux-Fork00.cpp: Ejercicio Fork y múltiples procesos hijos, hijos de hijos y zombis (defunct)
+
+01-01-2022
+
+Linux-mkFIFO-Read.cpp y Linux-mkFIFO-Write.cpp: Ejercicio de Named Pipe o FIFO
