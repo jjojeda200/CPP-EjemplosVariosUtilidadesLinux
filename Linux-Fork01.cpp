@@ -1,6 +1,6 @@
 /*
     José Juan Ojeda Granados, 22-12-2021
-    Fork y multimples procesos hijos
+    Fork y multimples procesos hijos y zombis
 
     https://man7.org/linux/man-pages/man2/fork.2.html
     
@@ -37,19 +37,17 @@ int main(int argc, char *argv[])
     int argValor = atoi(argv[1]); // Convertimos el char de argv en integer
     pid_t pidRetornado;
     int status;
-    int varControl = {1};
-    printf("Valor de varControl antes del Fork = %d\n", varControl);
+    printf("\tFork y multimples procesos hijos y zombis\n");
     for (int i = 0; i < argValor; i++)
     {
         pidRetornado = fork();
-        varControl = i;
         if (pidRetornado > 0)
         {
             printf("\e[0;33mProceso Padre, \"getpid()\"\t\e[0;37mID del proceso: %d\e[0m\n", getpid());
             continue;
         } else if (pidRetornado == 0)
         {
-            printf("\e[0;34mProceso Hijo %d \"getpid()\"\t\e[0;37mID del proceso: %d\e[0m\n", varControl, getpid());
+            printf("\e[0;34mProceso Hijo %d \"getpid()\"\t\e[0;37mID del proceso: %d\e[0m\n", i+1, getpid());
             /*
             Sin exit los hijos se convierten en padres creando hijos en cada ciclo del bucle.
             Los hijos se quedaran en estado Zombi mientras sean esperados por el padre con un wait.            
@@ -62,16 +60,17 @@ int main(int argc, char *argv[])
             exit(EXIT_FAILURE);
         }
     }
-    system("ps f");
+    system("ps lf");
     sleep(2);
     
     for (int i = 0; i < argValor; i++)
     {
+        int hijoPID;
         sleep(2);
-        wait(&status); // wait() o waitpid() se bloquea hasta que todos los hijos hayan terminado
-        printf("\e[0;35m\t Esperando por estatus de cada hijo (Hijo %d)\n", i);
+        hijoPID = wait(&status); // wait() o waitpid() se bloquea hasta que todos los hijos hayan terminado
+        printf("\e[0;35m\t Estatus del hijo Nº \e[0;34m%d\e[0;35m con PID \e[0;37m%d\e[0m\n", i+1, hijoPID);
     }
     printf("\e[0;33m\n");
-    system("ps f");
+    system("ps lf");
     return EXIT_SUCCESS;
 }
