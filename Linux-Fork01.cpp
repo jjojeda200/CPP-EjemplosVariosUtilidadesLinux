@@ -1,5 +1,5 @@
 /*
-    José Juan Ojeda Granados, 22-12-2021
+    José Juan Ojeda Granados, 01-02-2022
     Fork y multimples procesos hijos y zombis
 
     https://man7.org/linux/man-pages/man2/fork.2.html
