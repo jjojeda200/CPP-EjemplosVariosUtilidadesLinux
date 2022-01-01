@@ -20,13 +20,13 @@ inotify: monitorizar eventos en directorios y archivos
 
 30-12-2021
 
-Linux-Hilos-pthread00.cpp: Practica hilos, crear y ejecutar una terminal, mostrar ID
+Linux-Hilos-pthread00.cpp: Practica básica hilo, crear y ejecutar una terminal, mostrar ID
 
 31-12-2021
 
-Linux-Hilos-pthread01.cpp: Practica crear, escribir en un fichero y esperar finalización
+Linux-Hilos-pthread01.cpp: Practica crear hilo, espera completar tarea y recibir resultado devuelto, escribir en un fichero, esperar finalización
 
 
 31-12-2021
 
-Linux-Hilos-pthread02.cpp: Practica múltiples hilos
+Linux-Hilos-pthread02.cpp: Practica múltiples hilos, con ID

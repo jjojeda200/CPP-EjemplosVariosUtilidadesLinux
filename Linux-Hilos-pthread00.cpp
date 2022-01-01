@@ -2,8 +2,8 @@
     José Juan Ojeda Granados, 30-12-2021
     pthreads: manejo de hilos, crear un hilo y ejecutar una terminal y no esperar finalización.
 
-    La función pthread_create() inicia un nuevo hilo en la llamada proceso. El nuevo hilo comienza la ejecución invocando start_routine(); arg se pasa como el único argumento de
-    start_routine ().
+    La función pthread_create() inicia un nuevo hilo en la llamada proceso. El nuevo hilo comienza la ejecución invocando funcion(); arg se pasa como el único argumento de
+    funcion().
 
     https://man7.org/linux/man-pages/man7/pthreads.7.html
 

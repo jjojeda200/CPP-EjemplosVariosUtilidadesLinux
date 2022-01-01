@@ -19,7 +19,8 @@ void *funcionThread(void *argValor)
     // long numeroHilo = *((long*)argValor);
     // printf("Número de hilo: \e[0;33m %ld \e[0m\n", numeroHilo);
     int numeroHilo = *((int*)argValor);
-    printf("\e[0;33m Número de hilo ejecutado:\e[0;37m %d \e[0m\n", numeroHilo);
+    printf("\e[0;33m Número de hilo ejecutado (int):\e[0;37m %d \e[0m", numeroHilo);
+    printf("\e[0;33m pthread ID:\e[0;37m %lu \e[0m\n", pthread_self());
     pthread_exit(0);
 
     return 0;
@@ -63,9 +64,11 @@ int main(int argc, char *argv[])
             printf("Error creando el hilo, código %i \n", errorHilo);
             return -1;
         }
-        //sleep(2);
-        
-        // int pthread_join(pthread_t thread, void **retval);
+
+        /*
+        La función pthread_join implica esperar la terminación del hilo. En el puntero void **retval donde se almacena el estado de salida del hilo especificado devuelto por el. Si no se desea recuperar el código de salida del hilo esperado, se debe pasar el valor NULL como segundo argumento
+        int pthread_join(pthread_t thread, void **retval);
+        */
         // pthread_join(hilos[i], NULL);
     }
 
