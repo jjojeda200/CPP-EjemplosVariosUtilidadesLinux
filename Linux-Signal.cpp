@@ -1,6 +1,6 @@
 /*
     José Juan Ojeda Granados, 31-12-2021
-    sigaction manejo de señales, programar la función Handler que atienda a la señal
+    signal manejo de señales, programar la función Handler que atienda a la señal
 
     Comando Kill, ps
 
@@ -10,7 +10,6 @@
 
     https://man7.org/linux/man-pages/man2/sigaction.2.html
 
-    int sigaction(int signum, const struct sigaction *restrict act, struct sigaction *restrict oldact);
 */
 #include <signal.h>
 #include <stdio.h>
