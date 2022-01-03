@@ -40,6 +40,4 @@ Linux-mkFIFO-Read.cpp y Linux-mkFIFO-Write.cpp: Ejercicio de Named Pipe o FIFO
 
 03-01-2022
 
-Linux-Semaforos00.cpp: Ejercicio con semáforos, acceso a recursos criticos por hilos
-Linux-Semaforos01.cpp:
-  
+Linux-Semaforos00.cpp y Linux-Semaforos01.cpp: Ejercicio con semáforos, acceso a recursos criticos por hilos
