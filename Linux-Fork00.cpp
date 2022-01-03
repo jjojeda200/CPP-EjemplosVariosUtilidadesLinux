@@ -2,6 +2,18 @@
     José Juan Ojeda Granados, 22-12-2021
     Fork y un proceso hijo
 
+    pid_t fork(void);
+        Caracteristicas: 
+	        Se utiliza para crear un nuevo proceso a partir de un proceso existente. El nuevo proceso se llama proceso hijo y el proceso original se llama proceso padre.
+        Parámetros:
+	        No
+        valor de retorno:
+	        Éxito: retorno en el proceso secundario 0, El ID del proceso hijo se devuelve en el proceso padre. pid_t es un entero sin signo.
+	        Fracaso: regreso-1
+	        Las dos razones principales del fracaso son:
+		        1) El número actual de procesos ha alcanzado el límite superior especificado por el sistema y el valor de errno se establece en EAGAIN en este momento.
+		        2) La memoria del sistema es insuficiente y el valor de errno está establecido en ENOMEM.
+
     https://man7.org/linux/man-pages/man2/fork.2.html
     
     https://www.delftstack.com/es/howto/cpp/cpp-fork/
