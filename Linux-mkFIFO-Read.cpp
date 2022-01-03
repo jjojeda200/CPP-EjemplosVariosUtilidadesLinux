@@ -18,10 +18,6 @@
 #include <errno.h>
 #include <string.h>
 
-/*
-       int mkfifo(const char *pathname, mode_t mode);
-       int mkfifoat(int dirfd, const char *pathname, mode_t mode);
-*/
 
 int main(int argc, char *argv[])
 {
@@ -29,7 +25,12 @@ int main(int argc, char *argv[])
 
     int descriptorArchivo, numeroBytes;
     char bufer[250];
-
+    printf("Se busca el archivo especial ./miFIFO, para leer el mansaje\n");
+    
+/*
+       int mkfifo(const char *pathname, mode_t mode);
+       int mkfifoat(int dirfd, const char *pathname, mode_t mode);
+*/
     mkfifo("./miFIFO", 0666);
 
     descriptorArchivo = open("./miFIFO", O_RDONLY);
