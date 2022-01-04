@@ -28,7 +28,7 @@
 
     int sem_wait(sem_t *sem);
         Función:
-            Resta el valor del semáforo 1. Antes de la operación, verifca si el valor del semáforo (sem) es 0, Si el semáforo es 0, esta función se bloqueará hasta que el semáforo sea mayor que 0.
+            Resta el valor del semáforo 1. Antes de la operación, verifica si el valor del semáforo (sem) es 0, Si el semáforo es 0, esta función se bloqueará hasta que el semáforo sea mayor que 0.
         Parámetro:
             sem: la dirección del semáforo.
         Valor de retorno:
@@ -67,7 +67,7 @@
 sem_t semUno, semDos;   // Define dos semáforos
 static int contador = 0;
 
-void *pthreadHiloUno(void *arg) // Este hilo cambia el valor del caracter ch
+void *pthreadHiloUno(void *arg) // Este hilo incrementa el valor del contador
 {
     printf("\e[0;33mID de hilo uno:\e[0;34m%u\e[0m\n", (unsigned int)pthread_self());
     for (int i = 0; i < loop; i++)
@@ -80,9 +80,9 @@ void *pthreadHiloUno(void *arg) // Este hilo cambia el valor del caracter ch
     return 0;
 }
 
-void *pthreadHiloDos(void *arg) // Este hilo imprime el valor de ch
+void *pthreadHiloDos(void *arg) // Este hilo decrementa el valor de contador
 {
-     printf("\e[0;33mID de hilo dos:\e[0;34m%u\e[0m\n", (unsigned int)pthread_self());
+    printf("\e[0;33mID de hilo dos:\e[0;34m%u\e[0m\n", (unsigned int)pthread_self());
     for (int i = 0; i < loop; i++)
     {
         sem_wait(&semDos);
@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
     // La función pthread_self() devuelve el ID del hilo en el que se invoca. provoca continuar con la siguiente instrucción del main.
     printf("\e[0;33mID de hilo original:\e[0;34m%u\e[0m\n", (unsigned int)pthread_self()); 
 
-    // Mientras los semaforos este desabilitados, el resultado nunca sera 0, que es lo que cabe esperar de la ejecución de las dos funciones.
+    // Mientras los semáforos este deshabilitados, el resultado nunca sera 0, que es lo que cabe esperar de la ejecución de las dos funciones.
      sem_init(&semUno, 0, 0); // Inicializa el semáforo
      sem_init(&semDos, 0, 1);
 
@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
     pthread_join(hiloUno, NULL);
     pthread_join(hiloDos, NULL);
 
-    printf("Valor contafor %d\n", contador);
+    printf("Valor contador %d\n", contador);
 
     return 0;
 }

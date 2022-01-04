@@ -28,7 +28,7 @@
 
     int sem_wait(sem_t *sem);
         Función:
-            Resta el valor del semáforo 1. Antes de la operación, verifca si el valor del semáforo (sem) es 0, Si el semáforo es 0, esta función se bloqueará hasta que el semáforo sea mayor que 0.
+            Resta el valor del semáforo 1. Antes de la operación, verifica si el valor del semáforo (sem) es 0, Si el semáforo es 0, esta función se bloqueará hasta que el semáforo sea mayor que 0.
         Parámetro:
             sem: la dirección del semáforo.
         Valor de retorno:
@@ -68,7 +68,7 @@
 sem_t semUno, semDos; // Define dos semáforos
 char ch = 'a';
 
-void *pthreadHiloUno(void *arg) // Este hilo cambia el valor del caracter ch
+void *pthreadHiloUno(void *arg) // Este hilo cambia el valor del carácter ch
 {
 
     printf("\e[0;33mID de hilo uno:\e[0;34m%u\e[0m\n", (unsigned int)pthread_self());
