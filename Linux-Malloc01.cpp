@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
     puntero = (char *)malloc(numeroBytes);
     if (puntero == NULL)
     {
-        printf("Se ha producido un error");
+        printf("Se ha producido un error\n");
         return 1;
     }
     else
