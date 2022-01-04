@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 {
     system("clear");
 
-    // Capturamos la señal SIGIO para que provoque una interrupción en la aplicación
+    // Capturamos dos señales para que provoque una interrupción en la aplicación
     // sighandler_t signal(int signum, sighandler_t handler);
     signal(SIGIO, &miSignalHandler);
     signal(SIGALRM, &miSignalHandler);  // Esta señal por defecto produce la interrupción

@@ -45,4 +45,9 @@ Linux-Semaforos00.cpp y Linux-Semaforos01.cpp: Ejercicio con semáforos, acceso 
 03-01-2022
 
 Linux-Signal.cpp: signal manejo de señales, la función Handler
+
+04-01-2022
+
+Linux-Malloc00.cpp y Linux-Malloc01.cpp: Funciones malloc y free. Asignación dinámica de memoria.
+
   
