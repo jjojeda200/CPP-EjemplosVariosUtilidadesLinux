@@ -21,11 +21,6 @@ void miSignalHandler(int sig)
     printf("\n\e[0;34m La señal recibida es:\e[0;37m %d \e[0m", sig);
 }
 
-void miSignalHandlerII(int sig)
-{
-    printf("\n\e[0;34m La señal recibida es:\e[0;37m %d \e[0m", sig);
-}
-
 int main(int argc, char *argv[])
 {
     system("clear");
