@@ -1,5 +1,5 @@
 /*
-    José Juan Ojeda Granados, 31-12-2021
+    José Juan Ojeda Granados, 03-01-2022
     signal manejo de señales, programar la función Handler que atienda a la señal
 
     Comando Kill, ps

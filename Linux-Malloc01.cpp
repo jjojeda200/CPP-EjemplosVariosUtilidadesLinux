@@ -1,5 +1,5 @@
 /*
-    José Juan Ojeda Granados, 31-12-2021
+    José Juan Ojeda Granados, 04-01-2022
     Funciones malloc y free. Asignación dinámica de memoria.
 
     Asignación en tiempo de ejecución, en memoria HEAP

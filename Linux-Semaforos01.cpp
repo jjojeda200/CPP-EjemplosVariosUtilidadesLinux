@@ -1,6 +1,6 @@
 /*
 
-    José Juan Ojeda Granados, 30-12-2021
+    José Juan Ojeda Granados, 03-01-2022
     Programar con semáforos POSIX
 
     Ejemplo en el que dos hilos (threads) acceden a un "recurso compartido" y se producen errores, por lo que es necesario implementar semáforos para proteger la "sección crítica":
