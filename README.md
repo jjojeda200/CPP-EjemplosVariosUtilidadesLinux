@@ -1,6 +1,10 @@
 # José Juan Ojeda Granados
 # CPP-EjemplosVariosUtilidadesLinux
-# Ejercicios básicos diversos en CPP (Para linux)
+# Ejercicios básicos diversos en CPP (Bajo linux - POSIX)
+
+16-12-2021
+
+AppArgumentos.cpp: Llamada de aplicación con argumentos...
 
 22-12-2021
 
@@ -40,7 +44,7 @@ Linux-mkFIFO-Read.cpp y Linux-mkFIFO-Write.cpp: Ejercicio de Named Pipe o FIFO
 
 03-01-2022
 
-Linux-Semaforos00.cpp y Linux-Semaforos01.cpp: Ejercicio con semáforos, acceso a recursos criticos por hilos
+Linux-Semaforos00.cpp y Linux-Semaforos01.cpp: Ejercicio con semáforos, acceso a recursos críticos por hilos
 
 03-01-2022
 
@@ -54,6 +58,10 @@ Linux-Malloc00.cpp y Linux-Malloc01.cpp: Funciones malloc y free. Asignación di
 
 Linux-MensajesTX.cpp y Linux-MensajesRX.cpp: Programar Colas de Mensajes (POSIX Message Queues)
 
-04-01-2022
+05-01-2022
 
 Linux-MensajesTX-P.cpp y Linux-MensajesRX-P.cpp: Programar Colas de Mensajes con prioridad 
+
+06-01-2022
+
+LinuxExec.cpp: Reemplazar la imagen del proceso actual con otra imagen de proceso
