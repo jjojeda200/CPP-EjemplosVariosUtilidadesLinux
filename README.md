@@ -52,4 +52,8 @@ Linux-Malloc00.cpp y Linux-Malloc01.cpp: Funciones malloc y free. Asignación di
 
 04-01-2022
 
-Linux-MensajesTX.cpp y Linux-MensajesRX.cpp: Programar Colas de Mensajes (POSIX Message Queues) 
+Linux-MensajesTX.cpp y Linux-MensajesRX.cpp: Programar Colas de Mensajes (POSIX Message Queues)
+
+04-01-2022
+
+Linux-MensajesTX-P.cpp y Linux-MensajesRX-P.cpp: Programar Colas de Mensajes con prioridad 
