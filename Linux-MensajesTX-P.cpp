@@ -2,8 +2,6 @@
     José Juan Ojeda Granados, 05-01-2022
     Programar Colas de Mensajes con prioridad (POSIX Message Queues)
 
-    Comando Kill, ps
-
     https://man7.org/linux/man-pages/man7/mq_overview.7.html
 
     https://man7.org/linux/man-pages/man3/mq_open.3.html

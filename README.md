@@ -65,3 +65,8 @@ Linux-MensajesTX-P.cpp y Linux-MensajesRX-P.cpp: Programar Colas de Mensajes con
 06-01-2022
 
 LinuxExec.cpp: Reemplazar la imagen del proceso actual con otra imagen de proceso
+
+06-01-2022  # Original de Amaia - WhileTrueThenDream
+
+Linux-ShareMemory00C.cpp, Linux-ShareMemory01W.cpp, Linux-ShareMemory02R.cpp: Programar zonas de Memoria compartidas (POSIX Shared Memory)
+
