@@ -28,7 +28,7 @@ Linux-Hilos-pthread00.cpp: Ejercicio básica hilo, crear y ejecutar una terminal
 
 31-12-2021
 
-Linux-Hilos-pthread01.cpp: Ejercicio crear hilo, espera completar tarea y recibir resultado devuelto, escribir en un fichero, esperar finalización
+Linux-mutex00.cpp y Linux-mutex01.cpp: Bloquear recursos críticos ante múltiples procesos(nuclear)
 
 31-12-2021
 
@@ -74,3 +74,6 @@ Linux-ShareMemory00C.cpp, Linux-ShareMemory01W.cpp, Linux-ShareMemory02R.cpp: Pr
 
 Linux-mmap00.cpp y Linux-mmap01.cpp: Mapear o des asignar archivos o dispositivos en la memoria
 
+07-01-2022
+
+Linux-mutex00.cpp y Linux-mutex01.cpp: Bloquear recursos criticos ante muntimples procesos(nuclear)
