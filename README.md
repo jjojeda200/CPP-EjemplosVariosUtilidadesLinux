@@ -70,3 +70,7 @@ LinuxExec.cpp: Reemplazar la imagen del proceso actual con otra imagen de proces
 
 Linux-ShareMemory00C.cpp, Linux-ShareMemory01W.cpp, Linux-ShareMemory02R.cpp: Programar zonas de Memoria compartidas (POSIX Shared Memory)
 
+07-01-2022
+
+Linux-mmap00.cpp y Linux-mmap01.cpp: Mapear o des asignar archivos o dispositivos en la memoria
+
