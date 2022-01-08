@@ -16,7 +16,7 @@ Linux.Pipe00.cpp: Practica Programar "ls -l | wc > salida.txt"
 
 24-12-2021
 
-Linux.Pipe01.cpp: Ejercicio pendiente finalizar "----"
+Linux.Pipe01.cpp: Ejercicio Ejemplo documento linux man-pages
 
 28-12-2021
 
@@ -77,3 +77,7 @@ Linux-mmap00.cpp y Linux-mmap01.cpp: Mapear o des asignar archivos o dispositivo
 07-01-2022
 
 Linux-mutex00.cpp y Linux-mutex01.cpp: Bloquear recursos criticos ante muntimples procesos(nuclear)
+
+08-01-2022
+
+Linux.Pipe02.cpp: Ejercicio detallado ;-)
