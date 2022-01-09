@@ -12,7 +12,7 @@
     gcc Linux-Exec.cpp -o Exec
     Exec Arg Argumento_1 Argumento_2 Argumento_3 Argumento_4
 
-    "primer ejecutable" "segundo ejecutable" arguemento ... ... ...
+    "primer ejecutable" "segundo ejecutable" argumento ... ... ...
 
 */
 #include <stdio.h>
@@ -37,6 +37,6 @@ int main(int argc, char *argv[])
     
     fprintf(stderr, "Se ha producido el error %d: %s \n", errno, strerror(errno));
     
-    // Solo se llega a este pinto por error al llamar a execv
+    // Solo se llega a este punto por error al llamar a execv
     return -1;
 }

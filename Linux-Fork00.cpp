@@ -3,7 +3,7 @@
     Fork y un proceso hijo
 
     pid_t fork(void);
-        Caracteristicas: 
+        Características: 
 	        Se utiliza para crear un nuevo proceso a partir de un proceso existente. El nuevo proceso se llama proceso hijo y el proceso original se llama proceso padre.
         Parámetros:
 	        No

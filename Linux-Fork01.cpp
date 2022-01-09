@@ -3,7 +3,7 @@
     Fork y multimples procesos hijos y zombis
 
     pid_t fork(void);
-        Caracteristicas: 
+        Características: 
 	        Se utiliza para crear un nuevo proceso a partir de un proceso existente. El nuevo proceso se llama proceso hijo y el proceso original se llama proceso padre.
         Parámetros:
 	        No
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
     int argValor = atoi(argv[1]); // Convertimos el char de argv en integer
     pid_t pidRetornado;
     int status;
-    printf("\tFork y multimples procesos hijos y zombis\n");
+    printf("\tFork y múltiples procesos hijos y zombis\n");
     for (int i = 0; i < argValor; i++)
     {
         pidRetornado = fork();
