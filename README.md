@@ -12,7 +12,7 @@ Linux-Fork00.cpp: Ejercicio Fork y un proceso hijo
 
 23-12-2021  # Original de Amaia - WhileTrueThenDream
 
-Linux.Pipe00.cpp: Practica Programar "ls -l | wc > salida.txt"
+Linux.Pipe00.cpp: Práctica Programar "ls -l | wc > salida.txt"
 
 24-12-2021
 
