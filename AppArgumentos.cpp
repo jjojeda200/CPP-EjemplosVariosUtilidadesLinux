@@ -2,10 +2,8 @@
     José Juan Ojeda Granados, 16-12-2021
     Llamadas de aplicación con argumentos...
 */
-// #include <iostream>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include <iostream>
+#include <unistd.h>     // getpid()
 
 int main(int argc, char *argv[]) // Argumentos de entrada, prueba de concepto
 {
